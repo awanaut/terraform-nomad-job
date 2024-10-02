@@ -10,5 +10,5 @@ variable "datacenters" {
 
 variable "instance_count" {
   description = "The number of app instances to deploy"
-  type = string
+  type = number
 }
