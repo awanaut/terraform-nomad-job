@@ -1,7 +1,7 @@
 job "${name}" {
   # Specifies the datacenter where this job should be run
   # This can be omitted and it will default to ["*"]
-  datacenters = ["*"]
+  datacenters = ${datacenters}
 
   meta {
     # User-defined key/value pairs that can be used in your jobs.

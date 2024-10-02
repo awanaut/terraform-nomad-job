@@ -2,6 +2,7 @@ resource "nomad_job" "example_job" {
     jobspec = templatefile("${path.module}/helloworld.nomad.tpl", {
     name    = var.job_name
     instance_count       = var.instance_count
+    datacenters = var.datacenters
   })
 
   deregister_on_destroy = true

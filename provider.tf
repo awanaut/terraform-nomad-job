@@ -8,6 +8,6 @@ terraform {
 }
 
 provider "nomad" {
-  address = var.nomad_addr
-  secret_id = var.token
+  # address = var.nomad_addr
+  # secret_id = var.token
 }
